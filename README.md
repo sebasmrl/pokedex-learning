@@ -77,3 +77,14 @@ View a summary of image vulnerabilities and recommendations → docker scout qui
 detach
 
 
+## Axios | error presente en last version
+```
+npm install axios@0.27.2
+```
+
+node version manager 
+- nvm  use 18
+
+
+revertir a anterior commit
+git checkout --.
