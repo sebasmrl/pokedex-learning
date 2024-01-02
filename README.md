@@ -36,6 +36,11 @@ npm i -g @nest/cli
 docker-compose up -d
  ```
 
+5. Reconstruir base de datos con SEED
+``` 
+GET http://localhost:3000/api/v2/seed
+```
+
 ## Stack Usado
 - Nest
 - MongoDB
@@ -82,9 +87,11 @@ detach
 npm install axios@0.27.2
 ```
 
-node version manager 
+## node version manager 
 - nvm  use 18
 
 
-revertir a anterior commit
-git checkout --.
+## Revertir a anterior commit
+```
+git checkout -- .
+```
