@@ -36,10 +36,20 @@ npm i -g @nest/cli
 docker-compose up -d
  ```
 
-5. Reconstruir base de datos con SEED
+5. Clonar el archivo __.env.template__ y renombrar  la copia a __.env__ 
+
+6. Llenar las variables de entorno definidas
+
+7. Levantar servidor de nest
+```
+npm run start:dev
+```
+8. Reconstruir base de datos con SEED
 ``` 
 GET http://localhost:3000/api/v2/seed
 ```
+
+
 
 ## Stack Usado
 - Nest
@@ -72,9 +82,9 @@ conectar el puerto 27017 de mi computadora con el 27017 del contenedor
 docker pull mongo:5.0.0
 docker pull postgres:14.3
 
-- Docker Messages 
-View a summary of image vulnerabilities and recommendations → docker scout quickview mongo:5.0.0
-View a summary of image vulnerabilities and recommendations → docker scout quickview postgres:14.3
+- Docker Messages: 
+  - View a summary of image vulnerabilities and recommendations → docker scout quickview mongo:5.0.0
+  - View a summary of image vulnerabilities and recommendations → docker scout quickview postgres:14.3
 
 
 # Docker Compose
@@ -94,4 +104,14 @@ npm install axios@0.27.2
 ## Revertir a anterior commit
 ```
 git checkout -- .
+```
+
+## Colocar variables de entorno
+``` 
+npm i @nestjs/config
+```
+
+## Validaciones estrictas con varibales de entorno con (JOI)
+``` 
+npm i joi
 ```
